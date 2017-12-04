@@ -1,0 +1,203 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    @*<script src="~/Scripts/jquery.signalR-2.2.2.js"></script>*@
+    <link href="~/Content/app.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Free geolocation of IP addresses</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="description" content="Free geoip - http api to get geolocation based on domain or ip" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <META NAME="ROBOTS" CONTENT="All, index, follow">
+    <meta name="revisit-after" content="7 days">
+    <link rel="shortcut icon" href="http://geoip.immanuel.co/favicon.ico">
+    <META NAME="author" CONTENT="Immanuel">
+    <meta name="keywords" content="free geolocation of IP address, free geolocation of domain" />
+</head>
+<body style="text-align: center;font-family: 'Arial Narrow', Arial, sans-serif;">
+    <div style="position:fixed;top:10px;left:15px;text-align: center;border: 2px green dashed;z-index:101;background-color:cadetblue;">
+        <span style="background-color:azure;display:inline-block;width:70px;padding:5px;">GeoLocated</span><br />
+        <span style="color:white;font-size:large;" id="gnt"></span> <br />
+        <span style="background-color:azure;display:inline-block;width:70px;padding:5px;">Counts</span>
+    </div>
+    <div style="position:absolute;top:27px;right:12px;z-index:102;">
+        <div id="fb-root"></div>
+        <script>
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+        <div class="fb-share-button" data-href="http://geoip.immanuel.co/" data-layout="box_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fvideo-converter.immanuel.co%2Fhome%2Fconverter&amp;src=sdkpreparse">Share</a></div>
+    </div>
+    <div style="position:absolute;right:0px;top:0px;z-index:103;">
+        <div id="google_translate_element"></div>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </div>
+
+    <div style="position:relative;">
+        <h2 style="display: inline-block;">
+            Geolocation of IP Address or Domain
+        </h2>
+        <p>Simple HTTP API for software developers to search the geolocation of IP addresses or domain </p>
+    </div><br />
+    <hr />
+    <div id="fe-contain" style="height:80%;width:96%;background-color:#b9acb8;display:inline-block;border-radius:15px;position: relative;">
+        <div id="full-contain" style="height:80%;background-color:#b9acb8;display:inline-block;border-radius:15px;position: relative;padding: 25px;">
+            <div id="code-contain" style="background-color:#864f4f;display:inline-block;border-radius:15px;position: relative;float:left;">
+                <div style="background-color:#a5a1a0;border-radius: 15px 15px 0 0">
+                    <h3 style="margin:0px;padding-top:5px;padding-bottom:5px;">Developer API</h3>
+                    <div style="background-color: burlywood;">
+                        <p style="padding-top:10px;">Http Get API: <b> http://geoip.immanuel.co/address/&lt;&lt;examble.com&gt;&gt; </b> (get Json response)</p>
+                        <p style="padding-bottom:10px;">Http Get API: <b> http://geoip.immanuel.co/address/&lt;&lt;Your IP&gt;&gt; </b> (get Json response)</p>
+                    </div>
+                    <div>
+                        <h3>Your Details</h3>
+                        <p style="padding-top:10px;">http://geoip.immanuel.co/address/<span id="urip">@ViewBag.YIP</span></p>
+                    </div>
+                    <div style="padding-bottom:10px;text-align: center;">
+                        <table id="urtbl" style="align-content:flex-start; text-align: left;display: inline-block;background-color: indianred;border-radius:7px;">
+                        </table>
+                    </div>
+                </div>
+                <div class="cde-list" style="background-color:#a5a1a0;border-radius: 0 0 15px 15px;display: table;text-align:center;vertical-align:middle;width: 100%;">
+                    <div class="upl-vid" style="height:80px;width:150px;text-align:center;vertical-align:middle;display:table-cell;">
+                        <img src="~/Content/logo_.png" width="125" height="70" /><br />
+                    </div>
+                    <div class="dwl-tofmt" style="height:80px;width:150px;text-align:center;vertical-align:middle;display:table-cell;position: relative;">
+                        <input id="uurl" type="text" style="width: 350px;vertical-align:middle;height:30px;border-radius:5px;" placeholder="&nbsp;&nbsp; ex: immanuel.co or 198.38.83.113" />
+                    </div>
+                    <div class="dwld-btn" style="height:80px;width:175px;text-align:center;vertical-align:middle;display:table-cell;position: relative;">
+                        <input type="button" value="Find" id="btnFind" style="height:35px;border-radius:10px;vertical-align:middle;margin-top:10px;margin-bottom: 10px;width:75px;" />
+                    </div>
+                </div>
+                <div class="uplvid-prog" style="height:80px;text-align:center;vertical-align:middle;display:none;position: absolute;width: 389px;left:0;opacity: 0.9;background-color:black;border-radius: 15px;">
+                    <img src="~/Content/load_1.gif" width="50" height="55" style="vertical-align:middle;margin-left:5px;padding-top:15px;" />
+                </div>
+                <div id="vid-error" style="border-radius: 15px;display: table;text-align:center;vertical-align:middle;width:390px;height:30px;margin-top: 10px;color: red;">
+
+                </div>
+                <div id="vid-list" style="border-radius: 15px;display: table;text-align:center;vertical-align:middle;margin-top: 10px;">
+
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+    </div>
+    <div style="position:fixed;bottom: 5px;right: 10px;">
+        <p>Powered by Maxmind <a href="https://dev.maxmind.com/geoip/geoip2/geolite2/">Geolite2</a> database</p>
+        <p>any issue <a href="mailto:raj@immanuel.co">contact</a> <a href="http://immanuel.co">me</a> directly.. </p>
+    </div>
+    <script>
+            $(document).ready(function () {
+                actOnValue('45fdtkob', 'ConvertCnt', 'increment');
+                getValue('45fdtkob', 'ConvertCnt');
+
+
+                $('#btnFind').on('click', function () {
+                    actOnValue('45fdtkob', 'ConvertCnt', 'increment');
+                    loadAddress();
+                });
+
+                $(document).on("click", '.fbsharelink', function () {
+                    var shareurl = $(this).data('shareurl');
+                    window.open('https://www.facebook.com/sharer/sharer.php?u=' + shareurl + '&t=' + document.title, '',
+                        'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+                });
+            });
+    </script>
+    <script type="text/javascript">
+            var getValue = function (appkey, itemkey) {
+                $.ajax({
+                    type: "GET",
+                    url: "http://keyvalue.immanuel.co/api/KeyVal/GetValue/" + appkey + "/" + itemkey,
+                    contentType: false,
+                    processData: false
+                }).done(function (data) {
+                    $("#gnt").text(data || "0");
+                }).fail(function (err) {
+
+                });
+            }
+            var updateValue = function (appkey, itemkey, itemval) {
+                $.ajax({
+                    type: "POST",
+                    url: "http://keyvalue.immanuel.co/api/KeyVal/UpdateValue/" + appkey + "/" + itemkey + "/" + itemval,
+                    contentType: false,
+                    processData: false
+                }).done(function (data) {
+
+                }).fail(function (err) {
+
+                });
+            }
+            var actOnValue = function (appkey, itemkey, action) {
+                $.ajax({
+                    type: "POST",
+                    url: "http://keyvalue.immanuel.co/api/KeyVal/ActOnValue/" + appkey + "/" + itemkey + "/" + action,
+                    contentType: false,
+                    processData: false
+                }).done(function (data) {
+
+                }).fail(function (err) {
+
+                });
+            }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110532630-1"></script>
+    <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-110532630-1');
+    </script>
+    <script>
+            var loadAddress = function (sele, ip) {
+                if (!sele) {
+                    sele = $('<table style="margin:5px;align-content:flex-start;text-align:left;display:inline-block;background-color:indianred;border-radius: 7px;"></table>');
+                    $("#vid-list").append(sele);
+                    ip = ip || $("#uurl").val();
+                }
+                $.ajax({
+                    type: "GET",
+                    //url: "http://localhost:63479/address/" + ip,
+                    url: "http://geoip.immanuel.co/address/" + ip,
+                    contentType: false,
+                    processData: false
+                }).done(function (data) {
+                    sele.append("<tr><td colspan='2' style='text-align: center;font-weight: bold;font-style: italic;background-color: brown;'>" + data.Inip + "</td></tr>");
+                    if (data.Message && data.Message) {
+                        sele.append("<tr><td colspan='2'>" + data.Message + "</td></tr>");
+                        return;
+                    }
+                    sele.append("<tr><td>City</td><td>" + data.Address.city_name + "</td></tr>");
+                    sele.append("<tr><td>State</td><td>" + data.Address.subdivision_1_name + "</td></tr>");
+                    sele.append("<tr><td>Country</td><td>" + data.Address.country_name + "</td></tr>");
+                    sele.append("<tr><td>Continent</td><td>" + data.Address.continent_name + "</td></tr>");
+                    sele.append("<tr><td>Postalcode</td><td>" + data.Network.postal_code + "</td></tr>");
+                    sele.append("<tr><td>Lat, Lng</td><td><a target='_blank' href='http://maps.google.com/?q=" + data.Network.latitude + ", " + data.Network.longitude + "'>" + data.Network.latitude + ", " + data.Network.longitude + "</a></td></tr>");
+                }).fail(function (err) {
+
+                });
+            }
+            loadAddress($("#urtbl"), $("#urip").text());
+    </script>
+</body>
+</html>

@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_NewBackgroundProfile>True</_NewBackgroundProfile>
+    <_PublishTargetUrl>C:\Immi\Personal\MyProjects\geoip_\geoip_\_deploy</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>12/02/2017 22:23:31</publishTime>
+    </File>
+    <File Include="App_Data/GeoLite2-City-CSV_20171107/COPYRIGHT.txt">
+      <publishTime>11/06/2017 19:26:48</publishTime>
+    </File>
+    <File Include="App_Data/GeoLite2-City-CSV_20171107/GeoLite2-City-Blocks-IPv4.csv">
+      <publishTime>11/06/2017 19:26:48</publishTime>
+    </File>
+    <File Include="App_Data/GeoLite2-City-CSV_20171107/GeoLite2-City-Blocks-IPv6.csv">
+      <publishTime>11/06/2017 19:26:42</publishTime>
+    </File>
+    <File Include="App_Data/GeoLite2-City-CSV_20171107/GeoLite2-City-Locations-de.csv">
+      <publishTime>11/06/2017 19:26:58</publishTime>
+    </File>
+    <File Include="App_Data/GeoLite2-City-CSV_20171107/GeoLite2-City-Locations-en.csv">
+      <publishTime>11/06/2017 19:26:56</publishTime>
+    </File>
+    <File Include="App_Data/GeoLite2-City-CSV_20171107/GeoLite2-City-Locations-es.csv">
+      <publishTime>11/06/2017 19:26:58</publishTime>
+    </File>
+    <File Include="App_Data/GeoLite2-City-CSV_20171107/GeoLite2-City-Locations-fr.csv">
+      <publishTime>11/06/2017 19:26:56</publishTime>
+    </File>
+    <File Include="App_Data/GeoLite2-City-CSV_20171107/GeoLite2-City-Locations-ja.csv">
+      <publishTime>11/06/2017 19:26:48</publishTime>
+    </File>
+    <File Include="App_Data/GeoLite2-City-CSV_20171107/GeoLite2-City-Locations-pt-BR.csv">
+      <publishTime>11/06/2017 19:26:56</publishTime>
+    </File>
+    <File Include="App_Data/GeoLite2-City-CSV_20171107/GeoLite2-City-Locations-ru.csv">
+      <publishTime>11/06/2017 19:26:56</publishTime>
+    </File>
+    <File Include="App_Data/GeoLite2-City-CSV_20171107/GeoLite2-City-Locations-zh-CN.csv">
+      <publishTime>11/06/2017 19:26:48</publishTime>
+    </File>
+    <File Include="App_Data/GeoLite2-City-CSV_20171107/LICENSE.txt">
+      <publishTime>11/06/2017 19:26:56</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>02/22/2013 18:13:40</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>02/22/2013 18:13:40</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>12/02/2017 22:23:31</publishTime>
+    </File>
+    <File Include="bin/Geo.Model.dll">
+      <publishTime>12/03/2017 23:29:07</publishTime>
+    </File>
+    <File Include="bin/Geo.Model.pdb">
+      <publishTime>12/03/2017 23:29:07</publishTime>
+    </File>
+    <File Include="bin/Immanuel.Geoip.dll">
+      <publishTime>12/04/2017 17:16:53</publishTime>
+    </File>
+    <File Include="bin/Immanuel.Geoip.pdb">
+      <publishTime>12/04/2017 17:16:53</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>12/01/2016 01:37:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>12/07/2016 21:15:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>12/07/2016 21:20:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>12/07/2016 00:45:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>12/07/2016 21:19:10</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>12/07/2016 21:20:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>12/07/2016 00:39:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>12/13/2016 12:40:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>01/05/2012 20:38:46</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/04/2014 06:03:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/28/2016 00:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>06/28/2016 00:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>06/28/2016 00:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>06/28/2016 00:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>06/28/2016 00:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/28/2016 00:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/28/2016 00:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>06/28/2016 00:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/28/2016 00:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>06/28/2016 00:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/28/2016 00:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/28/2016 00:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>06/28/2016 00:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>06/28/2016 00:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/28/2016 00:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>06/28/2016 00:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/28/2016 00:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>06/28/2016 00:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>06/28/2016 00:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>06/28/2016 00:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/28/2016 00:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/28/2016 00:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>06/28/2016 00:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>06/28/2016 00:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/28/2016 00:20:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/28/2016 00:20:24</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>01/28/2015 13:32:42</publishTime>
+    </File>
+    <File Include="bin/System.Net.IPNetwork.dll">
+      <publishTime>08/18/2017 17:20:48</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/28/2015 13:34:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>01/28/2015 13:32:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>01/28/2015 13:33:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/28/2015 13:32:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/12/2014 00:56:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/28/2015 13:32:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/28/2015 13:34:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>01/28/2015 13:34:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>01/28/2015 13:34:30</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>09/11/2013 02:58:38</publishTime>
+    </File>
+    <File Include="Content/app.css">
+      <publishTime>12/04/2017 01:20:42</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>12/02/2017 22:23:24</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>12/02/2017 22:23:24</publishTime>
+    </File>
+    <File Include="Content/load_1.gif">
+      <publishTime>07/15/2017 21:11:21</publishTime>
+    </File>
+    <File Include="Content/logo_.jpg">
+      <publishTime>12/03/2017 23:54:07</publishTime>
+    </File>
+    <File Include="Content/logo_.png">
+      <publishTime>12/04/2017 00:02:50</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>12/02/2017 22:23:18</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>04/21/2016 13:14:18</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>12/02/2017 22:23:24</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>12/02/2017 22:23:24</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>12/02/2017 22:23:24</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>12/02/2017 22:23:24</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>12/02/2017 22:23:18</publishTime>
+    </File>
+    <File Include="google58f1f49c594688bf.html">
+      <publishTime>12/04/2017 02:17:07</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>12/03/2017 01:48:02</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>12/02/2017 22:23:24</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>12/02/2017 22:23:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>12/02/2017 22:23:25</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>12/02/2017 22:23:25</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>12/02/2017 22:23:25</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>12/02/2017 22:23:29</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>12/02/2017 22:23:29</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>12/02/2017 22:23:29</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>12/02/2017 22:23:29</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>12/02/2017 22:23:28</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>12/02/2017 22:23:29</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>12/02/2017 22:23:29</publishTime>
+    </File>
+    <File Include="sitemap.xml">
+      <publishTime>12/04/2017 02:14:59</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>12/04/2017 17:42:12</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>12/02/2017 22:23:18</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>12/02/2017 22:23:18</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>12/02/2017 22:23:18</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>12/02/2017 22:23:18</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/04/2017 01:04:27</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

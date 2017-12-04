@@ -1,0 +1,4 @@
+C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Geo.Model\bin\Release\Geo.Model.dll
+C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Geo.Model\bin\Release\Geo.Model.pdb
+C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Geo.Model\obj\Release\Geo.Model.dll
+C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Geo.Model\obj\Release\Geo.Model.pdb

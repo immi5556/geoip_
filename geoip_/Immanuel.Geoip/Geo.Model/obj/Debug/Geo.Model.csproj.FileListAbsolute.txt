@@ -1,0 +1,5 @@
+C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Geo.Model\bin\Debug\Geo.Model.dll
+C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Geo.Model\bin\Debug\Geo.Model.pdb
+C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Geo.Model\obj\Debug\Geo.Model.csprojResolveAssemblyReference.cache
+C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Geo.Model\obj\Debug\Geo.Model.dll
+C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Geo.Model\obj\Debug\Geo.Model.pdb
