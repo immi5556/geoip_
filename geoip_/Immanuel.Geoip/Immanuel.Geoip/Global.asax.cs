@@ -18,7 +18,7 @@ namespace Immanuel.Geoip
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            App_Start.GeoipContext.InitData();
+            //App_Start.GeoipContext.InitData();
         }
     }
 }

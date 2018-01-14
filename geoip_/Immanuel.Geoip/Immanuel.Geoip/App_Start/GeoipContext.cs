@@ -16,53 +16,69 @@ namespace Immanuel.Geoip.App_Start
             string fileNamecloc = System.Web.Hosting.HostingEnvironment.MapPath("~/App_Data/GeoLite2-City-CSV_20171107/GeoLite2-City-Locations-en.csv");
 
             int idx = 0;
-            foreach (var line in File.ReadLines(fileNamev4))
+            if (_cityv4 == null || _cityv4.Count == 0)
             {
-                if (idx == 0)
+                _cityv4 = new List<CityIpV4>();
+                foreach (var line in File.ReadLines(fileNamev4))
                 {
-                    idx++;
-                    continue;
+                    if (idx == 0)
+                    {
+                        idx++;
+                        continue;
+                    }
+                    _cityv4.Add(CityIpV4.FromCsv(line));
                 }
-                _cityv4.Add(CityIpV4.FromCsv(line));
+                //_cityv4 = File.ReadAllLines(fileNamev4)
+                //                               .Skip(1)
+                //                               .Select(v => CityIpV4.FromCsv(v))
+                //                               .ToList();
             }
-            //_cityv4 = File.ReadAllLines(fileNamev4)
-            //                               .Skip(1)
-            //                               .Select(v => CityIpV4.FromCsv(v))
-            //                               .ToList();
             idx = 0;
-            foreach (var line in File.ReadLines(fileNamev6))
+            if (_cityv6 == null || _cityv6.Count == 0)
             {
-                if (idx == 0)
+                _cityv6 = new List<CityIpV6>();
+                foreach (var line in File.ReadLines(fileNamev6))
                 {
-                    idx++;
-                    continue;
+                    if (idx == 0)
+                    {
+                        idx++;
+                        continue;
+                    }
+                    _cityv6.Add(CityIpV6.FromCsv(line));
                 }
-                _cityv6.Add(CityIpV6.FromCsv(line));
-            }
 
-            //_cityv6 = File.ReadAllLines(fileNamev6)
-            //                               .Skip(1)
-            //                               .Select(v => CityIpV6.FromCsv(v))
-            //                               .ToList();
+                //_cityv6 = File.ReadAllLines(fileNamev6)
+                //                               .Skip(1)
+                //                               .Select(v => CityIpV6.FromCsv(v))
+                //                               .ToList();
+            }
             idx = 0;
-            foreach (var line in File.ReadLines(fileNamecloc))
+            if (_cityloc == null || _cityloc.Count == 0)
             {
-                if (idx == 0)
+                _cityloc = new List<CityLocation>();
+                foreach (var line in File.ReadLines(fileNamecloc))
                 {
-                    idx++;
-                    continue;
+                    if (idx == 0)
+                    {
+                        idx++;
+                        continue;
+                    }
+                    _cityloc.Add(CityLocation.FromCsv(line));
                 }
-                _cityloc.Add(CityLocation.FromCsv(line));
-            }
 
-            //_cityloc = File.ReadAllLines(fileNamecloc)
-            //                               .Skip(1)
-            //                               .Select(v => CityLocation.FromCsv(v))
-            //                               .ToList();
+                //_cityloc = File.ReadAllLines(fileNamecloc)
+                //                               .Skip(1)
+                //                               .Select(v => CityLocation.FromCsv(v))
+                //                               .ToList();
+            }
         }
 
-        public static List<CityIpV4> _cityv4 = new List<CityIpV4>();
-        public static List<CityIpV6> _cityv6 = new List<CityIpV6>();
-        public static List<CityLocation> _cityloc = new List<CityLocation>();
+        public static List<CityIpV4> _cityv4 { get; set; }
+        public static List<CityIpV6> _cityv6 { get; set; }
+        public static List<CityLocation> _cityloc { get; set; }
+
+        //public static List<CityIpV4> _cityv4 = new List<CityIpV4>();
+        //public static List<CityIpV6> _cityv6 = new List<CityIpV6>();
+        //public static List<CityLocation> _cityloc = new List<CityLocation>();
     }
 }

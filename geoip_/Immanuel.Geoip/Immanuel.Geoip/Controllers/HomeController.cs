@@ -101,6 +101,7 @@ namespace Immanuel.Geoip.Controllers
 
         JsonResult GetIpv6(string inip, string ip)
         {
+            App_Start.GeoipContext.InitData();
             CityLocation ty = null;
             CityIpV6 ty1 = new CityIpV6();
             IPAddress incomingIp = IPAddress.Parse(ip);
@@ -166,6 +167,7 @@ namespace Immanuel.Geoip.Controllers
 
         JsonResult GetIpv4(string inip, string ip)
         {
+            App_Start.GeoipContext.InitData();
             CityLocation ty = null;
             CityIpV4 ty1 = new CityIpV4();
             IPAddress incomingIp = IPAddress.Parse(ip);

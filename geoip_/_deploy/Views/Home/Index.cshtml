@@ -18,7 +18,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <META NAME="ROBOTS" CONTENT="All, index, follow">
     <meta name="revisit-after" content="7 days">
-    <link rel="shortcut icon" href="http://geoip.immanuel.co/favicon.ico">
+    <link rel="shortcut icon" href="https://geoip.immanuel.co/favicon.ico">
     <META NAME="author" CONTENT="Immanuel">
     <meta name="keywords" content="free geolocation of IP address, free geolocation of domain" />
 </head>
@@ -63,12 +63,13 @@
                 <div style="background-color:#a5a1a0;border-radius: 15px 15px 0 0">
                     <h3 style="margin:0px;padding-top:5px;padding-bottom:5px;">Developer API</h3>
                     <div style="background-color: burlywood;">
-                        <p style="padding-top:10px;">Http Get API: <b> http://geoip.immanuel.co/address/&lt;&lt;examble.com&gt;&gt; </b> (get Json response)</p>
-                        <p style="padding-bottom:10px;">Http Get API: <b> http://geoip.immanuel.co/address/&lt;&lt;Your IP&gt;&gt; </b> (get Json response)</p>
+                        <p style="padding-top:10px;">Http Get API: <b> https://geoip.immanuel.co/myip </b> (get caller ip, like "what is my ip" - result)</p>
+                        <p style="padding-top:10px;">Http Get API: <b> https://geoip.immanuel.co/address/&lt;&lt;examble.com&gt;&gt; </b> (get Json response)</p>
+                        <p style="padding-bottom:10px;">Http Get API: <b> https://geoip.immanuel.co/address/&lt;&lt;Your IP&gt;&gt; </b> (get Json response)</p>
                     </div>
                     <div>
                         <h3>Your Details</h3>
-                        <p style="padding-top:10px;">http://geoip.immanuel.co/address/<span id="urip">@ViewBag.YIP</span></p>
+                        <p style="padding-top:10px;">https://geoip.immanuel.co/address/<span id="urip">@ViewBag.YIP</span></p>
                     </div>
                     <div style="padding-bottom:10px;text-align: center;">
                         <table id="urtbl" style="align-content:flex-start; text-align: left;display: inline-block;background-color: indianred;border-radius:7px;">
@@ -125,7 +126,7 @@
             var getValue = function (appkey, itemkey) {
                 $.ajax({
                     type: "GET",
-                    url: "http://keyvalue.immanuel.co/api/KeyVal/GetValue/" + appkey + "/" + itemkey,
+                    url: "https://keyvalue.immanuel.co/api/KeyVal/GetValue/" + appkey + "/" + itemkey,
                     contentType: false,
                     processData: false
                 }).done(function (data) {
@@ -137,7 +138,7 @@
             var updateValue = function (appkey, itemkey, itemval) {
                 $.ajax({
                     type: "POST",
-                    url: "http://keyvalue.immanuel.co/api/KeyVal/UpdateValue/" + appkey + "/" + itemkey + "/" + itemval,
+                    url: "https://keyvalue.immanuel.co/api/KeyVal/UpdateValue/" + appkey + "/" + itemkey + "/" + itemval,
                     contentType: false,
                     processData: false
                 }).done(function (data) {
@@ -149,7 +150,7 @@
             var actOnValue = function (appkey, itemkey, action) {
                 $.ajax({
                     type: "POST",
-                    url: "http://keyvalue.immanuel.co/api/KeyVal/ActOnValue/" + appkey + "/" + itemkey + "/" + action,
+                    url: "https://keyvalue.immanuel.co/api/KeyVal/ActOnValue/" + appkey + "/" + itemkey + "/" + action,
                     contentType: false,
                     processData: false
                 }).done(function (data) {
@@ -178,7 +179,7 @@
                 $.ajax({
                     type: "GET",
                     //url: "http://localhost:63479/address/" + ip,
-                    url: "http://geoip.immanuel.co/address/" + ip,
+                    url: "https://geoip.immanuel.co/address/" + ip,
                     contentType: false,
                     processData: false
                 }).done(function (data) {
