@@ -10,7 +10,7 @@ using System.Web.Http.Cors;
 
 namespace Immanuel.Geoip.Controllers
 {
-    [EnableCors(origins: "*", headers: "*", methods: "*")]
+    //[EnableCors(origins: "*", headers: "*", methods: "*")]
     public class IpController : ApiController
     {
         [Route("myip")]

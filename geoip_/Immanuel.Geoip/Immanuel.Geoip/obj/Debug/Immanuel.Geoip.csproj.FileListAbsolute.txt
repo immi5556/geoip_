@@ -74,3 +74,6 @@ C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\bin\Micr
 C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\obj\Debug\Immanuel.Geoip.dll
 C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\obj\Debug\Immanuel.Geoip.pdb
 C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\bin\System.Net.IPNetwork.dll
+C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\bin\System.Web.Cors.dll
+C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\bin\System.Web.Http.Cors.dll
+C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\bin\System.Web.Http.Cors.xml

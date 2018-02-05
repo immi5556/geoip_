@@ -247,5 +247,13 @@ namespace Immanuel.Geoip.Controllers
                 return Json(new { Inip = inip, Message = exp.Message }, JsonRequestBehavior.AllowGet);
             }
         }
+
+
+        [Route("address")]
+        public JsonResult GetCurrentCity()
+        {
+            string yip = GetIPAddress(Request);
+            return GetCity(yip);
+        }
     }
 }
