@@ -71,9 +71,11 @@ C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\bin\Micr
 C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\bin\Microsoft.AI.WindowsServer.xml
 C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\bin\Microsoft.AI.Web.xml
-C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\obj\Release\Immanuel.Geoip.csprojResolveAssemblyReference.cache
 C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\obj\Release\Immanuel.Geoip.dll
 C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\obj\Release\Immanuel.Geoip.pdb
 C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\bin\System.Web.Cors.dll
 C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\bin\System.Web.Http.Cors.dll
 C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\bin\System.Web.Http.Cors.xml
+C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\obj\Release\Immanuel.Geoip.csprojAssemblyReference.cache
+C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\obj\Release\Immanuel.Geoip.csproj.CoreCompileInputs.cache
+C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\obj\Release\Immanuel.Geoip.csproj.CopyComplete

@@ -2,8 +2,10 @@ C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Test.Geo\bin\Debug\Test
 C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Test.Geo\bin\Debug\Test.Geo.exe
 C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Test.Geo\bin\Debug\Test.Geo.pdb
 C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Test.Geo\bin\Debug\System.Net.IPNetwork.dll
-C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Test.Geo\obj\Debug\Test.Geo.csprojResolveAssemblyReference.cache
 C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Test.Geo\obj\Debug\Test.Geo.exe
 C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Test.Geo\obj\Debug\Test.Geo.pdb
 C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Test.Geo\bin\Debug\Geo.Model.dll
 C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Test.Geo\bin\Debug\Geo.Model.pdb
+C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Test.Geo\obj\Debug\Test.Geo.csprojAssemblyReference.cache
+C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Test.Geo\obj\Debug\Test.Geo.csproj.CoreCompileInputs.cache
+C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Test.Geo\obj\Debug\Test.Geo.csproj.CopyComplete

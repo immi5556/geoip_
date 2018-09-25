@@ -1,4 +1,3 @@
-C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\obj\Debug\Immanuel.Geoip.csprojResolveAssemblyReference.cache
 C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\bin\ApplicationInsights.config
 C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\bin\roslyn\csc.exe
 C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\bin\roslyn\csc.exe.config
@@ -77,3 +76,6 @@ C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\bin\Syst
 C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\bin\System.Web.Cors.dll
 C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\bin\System.Web.Http.Cors.dll
 C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\bin\System.Web.Http.Cors.xml
+C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\obj\Debug\Immanuel.Geoip.csprojAssemblyReference.cache
+C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\obj\Debug\Immanuel.Geoip.csproj.CoreCompileInputs.cache
+C:\Immi\Personal\MyProjects\geoip_\geoip_\Immanuel.Geoip\Immanuel.Geoip\obj\Debug\Immanuel.Geoip.csproj.CopyComplete

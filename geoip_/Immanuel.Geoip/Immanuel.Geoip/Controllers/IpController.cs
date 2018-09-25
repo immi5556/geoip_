@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.ServiceModel.Channels;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
 using System.Web.Http.Cors;
@@ -13,9 +14,23 @@ namespace Immanuel.Geoip.Controllers
     //[EnableCors(origins: "*", headers: "*", methods: "*")]
     public class IpController : ApiController
     {
-        [Route("myip")]
-        public string GetIp()
+
+        static async Task<bool> CountIncrement()
         {
+            //actOnValue('45fdtkob', 'ConvertCnt', 'increment');
+            using (var client = new HttpClient())
+            {
+                var response = await client.PostAsync(
+                    "https://keyvalue.immanuel.co/api/KeyVal/ActOnValue/45fdtkob/ConvertCnt/increment",
+                     new StringContent(""));
+            }
+            return true;
+        }
+
+        [Route("myip")]
+        public async Task<string> GetIp()
+        {
+            await CountIncrement();
             return GetClientIp();
         }
 

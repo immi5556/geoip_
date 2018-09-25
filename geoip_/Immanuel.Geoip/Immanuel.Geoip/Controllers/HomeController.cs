@@ -3,7 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
@@ -226,9 +228,10 @@ namespace Immanuel.Geoip.Controllers
         }
 
         [Route("address/{ip}")]
-        public JsonResult GetCity(string ip)
+        public async Task<JsonResult> GetCity(string ip)
         {
             string inip = ip;
+            await CountIncrement();
             try
             {
                 ip = GetIP(ip);
@@ -250,10 +253,23 @@ namespace Immanuel.Geoip.Controllers
 
 
         [Route("address")]
-        public JsonResult GetCurrentCity()
+        public async Task<JsonResult> GetCurrentCity()
         {
+            await CountIncrement();
             string yip = GetIPAddress(Request);
-            return GetCity(yip);
+            return await GetCity(yip);
+        }
+
+        static async Task<bool> CountIncrement()
+        {
+            //actOnValue('45fdtkob', 'ConvertCnt', 'increment');
+            using (var client = new HttpClient())
+            {
+                var response = await client.PostAsync(
+                    "https://keyvalue.immanuel.co/api/KeyVal/ActOnValue/45fdtkob/ConvertCnt/increment",
+                     new StringContent(""));
+            }
+            return true;
         }
     }
 }
